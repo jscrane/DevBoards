@@ -1,0 +1,161 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "nrf24l01 breakout"
+Date "2019-06-12"
+Rev "1.0"
+Comp "Stephen Crane"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x08_Female J1
+U 1 1 5D00B283
+P 3500 2150
+F 0 "J1" H 3394 1617 50  0000 C CNN
+F 1 "Conn_01x08_Female" H 3394 1616 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 3500 2150 50  0001 C CNN
+F 3 "~" H 3500 2150 50  0001 C CNN
+	1    3500 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J2
+U 1 1 5D00B3F5
+P 4450 2050
+F 0 "J2" H 4500 2367 50  0000 C CNN
+F 1 "nrf24l01" H 4500 2276 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 4450 2050 50  0001 C CNN
+F 3 "~" H 4450 2050 50  0001 C CNN
+	1    4450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 5D00B4ED
+P 4500 1550
+F 0 "C1" V 4245 1550 50  0000 C CNN
+F 1 "10u" V 4336 1550 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 4538 1400 50  0001 C CNN
+F 3 "~" H 4500 1550 50  0001 C CNN
+	1    4500 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 1550 4250 1550
+Wire Wire Line
+	4250 1550 4250 1950
+Wire Wire Line
+	4650 1550 4750 1550
+Wire Wire Line
+	4750 1550 4750 1950
+Wire Wire Line
+	4250 1950 4000 1950
+Wire Wire Line
+	4000 1950 4000 2450
+Wire Wire Line
+	4000 2450 3850 2450
+Connection ~ 4250 1950
+Wire Wire Line
+	4750 1950 4950 1950
+Wire Wire Line
+	4950 1950 4950 1750
+Wire Wire Line
+	4950 1750 3850 1750
+Connection ~ 4750 1950
+Wire Wire Line
+	4250 2050 4050 2050
+Wire Wire Line
+	4050 2050 4050 1850
+Wire Wire Line
+	4050 1850 3700 1850
+Wire Wire Line
+	4750 2050 5000 2050
+Wire Wire Line
+	5000 2050 5000 1700
+Wire Wire Line
+	5000 1700 3950 1700
+Wire Wire Line
+	3950 1700 3950 1950
+Wire Wire Line
+	3950 1950 3700 1950
+Wire Wire Line
+	4250 2150 3950 2150
+Wire Wire Line
+	3950 2150 3950 2050
+Wire Wire Line
+	3950 2050 3700 2050
+Wire Wire Line
+	4750 2250 4750 2350
+Wire Wire Line
+	4750 2350 3700 2350
+Wire Wire Line
+	4250 2250 3700 2250
+Wire Wire Line
+	4750 2150 4800 2150
+Wire Wire Line
+	4800 2150 4800 2400
+Wire Wire Line
+	4800 2400 3800 2400
+Wire Wire Line
+	3800 2400 3800 2150
+Wire Wire Line
+	3800 2150 3700 2150
+$Comp
+L power:GND #PWR?
+U 1 1 5D00C4E7
+P 3700 2450
+F 0 "#PWR?" H 3700 2200 50  0001 C CNN
+F 1 "GND" H 3705 2277 50  0000 C CNN
+F 2 "" H 3700 2450 50  0001 C CNN
+F 3 "" H 3700 2450 50  0001 C CNN
+	1    3700 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3700 2450
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5D00C5BA
+P 3850 2450
+F 0 "#FLG?" H 3850 2525 50  0001 C CNN
+F 1 "PWR_FLAG" H 3850 2623 50  0001 C CNN
+F 2 "" H 3850 2450 50  0001 C CNN
+F 3 "~" H 3850 2450 50  0001 C CNN
+	1    3850 2450
+	-1   0    0    1   
+$EndComp
+Connection ~ 3850 2450
+Wire Wire Line
+	3850 2450 3700 2450
+$Comp
+L power:VCC #PWR?
+U 1 1 5D00C63A
+P 3700 1750
+F 0 "#PWR?" H 3700 1600 50  0001 C CNN
+F 1 "VCC" H 3717 1923 50  0000 C CNN
+F 2 "" H 3700 1750 50  0001 C CNN
+F 3 "" H 3700 1750 50  0001 C CNN
+	1    3700 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 3700 1750
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5D00C66C
+P 3850 1750
+F 0 "#FLG?" H 3850 1825 50  0001 C CNN
+F 1 "PWR_FLAG" H 3850 1924 50  0001 C CNN
+F 2 "" H 3850 1750 50  0001 C CNN
+F 3 "~" H 3850 1750 50  0001 C CNN
+	1    3850 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 3850 1750
+Wire Wire Line
+	3850 1750 3700 1750
+$EndSCHEMATC
