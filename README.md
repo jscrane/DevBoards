@@ -6,6 +6,9 @@ An ATtiny84 development board with FTDI interface. Works very well
 with [Optiboot](https://github.com/Optiboot/optiboot),
 in particular with the [ATTinyCore](https://github.com/SpenceKonde/ATTinyCore).
 
+## t85opti
+Same as t84opti, except with ATtiny85, and no LED_BUILTIN.
+
 ## nrf24l01
 A breadboard adapter for the
 [nrf24l01](https://howtomechatronics.com/tutorials/arduino/arduino-wireless-communication-nrf24l01-tutorial/)

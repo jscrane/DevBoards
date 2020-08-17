@@ -1,0 +1,281 @@
+EESchema Schematic File Version 4
+LIBS:t85opti-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "ATtiny85 with Optiboot"
+Date "2020-03-24"
+Rev "1.0"
+Comp "Stephen Crane"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x06_Female J1
+U 1 1 5CFE3D69
+P 4900 1150
+F 0 "J1" V 4840 762 50  0000 R CNN
+F 1 "FTDI" V 4749 762 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 4900 1150 50  0001 C CNN
+F 3 "~" H 4900 1150 50  0001 C CNN
+	1    4900 1150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 1350 4800 1350
+$Comp
+L power:GND #PWR03
+U 1 1 5CFE3E4C
+P 4700 1500
+F 0 "#PWR03" H 4700 1250 50  0001 C CNN
+F 1 "GND" H 4705 1327 50  0000 C CNN
+F 2 "" H 4700 1500 50  0001 C CNN
+F 3 "" H 4700 1500 50  0001 C CNN
+	1    4700 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4700 1350
+$Comp
+L power:GND #PWR06
+U 1 1 5CFE3E74
+P 5050 3400
+F 0 "#PWR06" H 5050 3150 50  0001 C CNN
+F 1 "GND" H 5055 3227 50  0000 C CNN
+F 2 "" H 5050 3400 50  0001 C CNN
+F 3 "" H 5050 3400 50  0001 C CNN
+	1    5050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5CFE3EEB
+P 4700 1450
+F 0 "#FLG01" H 4700 1525 50  0001 C CNN
+F 1 "PWR_FLAG" V 4700 1578 50  0001 L CNN
+F 2 "" H 4700 1450 50  0001 C CNN
+F 3 "~" H 4700 1450 50  0001 C CNN
+	1    4700 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 1350 4700 1450
+Connection ~ 4700 1450
+Wire Wire Line
+	4700 1450 4700 1500
+$Comp
+L power:VCC #PWR05
+U 1 1 5CFE3F88
+P 5050 2200
+F 0 "#PWR05" H 5050 2050 50  0001 C CNN
+F 1 "VCC" H 5067 2373 50  0000 C CNN
+F 2 "" H 5050 2200 50  0001 C CNN
+F 3 "" H 5050 2200 50  0001 C CNN
+	1    5050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR04
+U 1 1 5CFE3FB0
+P 4900 1500
+F 0 "#PWR04" H 4900 1350 50  0001 C CNN
+F 1 "VCC" H 4918 1673 50  0000 C CNN
+F 2 "" H 4900 1500 50  0001 C CNN
+F 3 "" H 4900 1500 50  0001 C CNN
+	1    4900 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4900 1500 4900 1450
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5CFE3FD4
+P 4900 1450
+F 0 "#FLG02" H 4900 1525 50  0001 C CNN
+F 1 "PWR_FLAG" H 4900 1578 50  0001 L CNN
+F 2 "" H 4900 1450 50  0001 C CNN
+F 3 "~" H 4900 1450 50  0001 C CNN
+	1    4900 1450
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4900 1450
+Wire Wire Line
+	4900 1450 4900 1350
+$Comp
+L Device:C_Small C2
+U 1 1 5CFE4F03
+P 6000 1650
+F 0 "C2" H 6092 1696 50  0000 L CNN
+F 1 "100n" H 6092 1605 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 6000 1650 50  0001 C CNN
+F 3 "~" H 6000 1650 50  0001 C CNN
+	1    6000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5CFE502F
+P 4100 2000
+F 0 "C1" H 4192 2046 50  0000 L CNN
+F 1 "100n" H 4192 1955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 4100 2000 50  0001 C CNN
+F 3 "~" H 4100 2000 50  0001 C CNN
+	1    4100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 5CFE5087
+P 4100 1900
+F 0 "#PWR01" H 4100 1750 50  0001 C CNN
+F 1 "VCC" H 4117 2073 50  0000 C CNN
+F 2 "" H 4100 1900 50  0001 C CNN
+F 3 "" H 4100 1900 50  0001 C CNN
+	1    4100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5CFE509A
+P 4100 2100
+F 0 "#PWR02" H 4100 1850 50  0001 C CNN
+F 1 "GND" H 4105 1927 50  0000 C CNN
+F 2 "" H 4100 2100 50  0001 C CNN
+F 3 "" H 4100 2100 50  0001 C CNN
+	1    4100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5CFE5177
+P 6400 1950
+F 0 "R1" V 6204 1950 50  0000 C CNN
+F 1 "10k" V 6295 1950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 6400 1950 50  0001 C CNN
+F 3 "~" H 6400 1950 50  0001 C CNN
+	1    6400 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR07
+U 1 1 5CFE53CC
+P 6500 1950
+F 0 "#PWR07" H 6500 1800 50  0001 C CNN
+F 1 "VCC" H 6517 2123 50  0000 C CNN
+F 2 "" H 6500 1950 50  0001 C CNN
+F 3 "" H 6500 1950 50  0001 C CNN
+	1    6500 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5CFE5825
+P 6500 1450
+F 0 "SW1" H 6500 1735 50  0000 C CNN
+F 1 "Reset" H 6500 1644 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H7.3mm" H 6500 1650 50  0001 C CNN
+F 3 "" H 6500 1650 50  0001 C CNN
+	1    6500 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1350 6300 1450
+$Comp
+L power:GND #PWR08
+U 1 1 5CFE5B1B
+P 6700 1450
+F 0 "#PWR08" H 6700 1200 50  0001 C CNN
+F 1 "GND" H 6705 1277 50  0000 C CNN
+F 2 "" H 6700 1450 50  0001 C CNN
+F 3 "" H 6700 1450 50  0001 C CNN
+	1    6700 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85V-10PU U1
+U 1 1 5E79EBEF
+P 5050 2800
+F 0 "U1" H 4520 2846 50  0000 R CNN
+F 1 "ATtiny85" H 4520 2755 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5050 2800 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 5050 2800 50  0001 C CNN
+	1    5050 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1350 6000 1350
+Wire Wire Line
+	6000 1550 6000 1350
+Connection ~ 6000 1350
+Wire Wire Line
+	6000 1350 6300 1350
+Wire Wire Line
+	6000 1750 6000 1950
+Wire Wire Line
+	6000 1950 6300 1950
+Text Label 5650 3000 0    50   ~ 0
+RESET
+Text Label 6000 1950 2    50   ~ 0
+RESET
+Text Label 5000 1350 3    50   ~ 0
+TxD
+Text Label 5100 1350 3    50   ~ 0
+RxD
+Text Label 5650 2500 0    50   ~ 0
+RxD
+Text Label 5650 2600 0    50   ~ 0
+TxD
+$Comp
+L Connector:Conn_01x04_Female J3
+U 1 1 5E79FA37
+P 6400 3250
+F 0 "J3" H 6427 3226 50  0000 L CNN
+F 1 "Left" H 6427 3135 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6400 3250 50  0001 C CNN
+F 3 "~" H 6400 3250 50  0001 C CNN
+	1    6400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J2
+U 1 1 5E79FA72
+P 6400 2600
+F 0 "J2" H 6428 2576 50  0000 L CNN
+F 1 "Right" H 6428 2485 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6400 2600 50  0001 C CNN
+F 3 "~" H 6400 2600 50  0001 C CNN
+	1    6400 2600
+	1    0    0    -1  
+$EndComp
+Text Label 6200 2500 2    50   ~ 0
+VCC
+Text Label 6200 3450 2    50   ~ 0
+GND
+Text Label 6200 3150 2    50   ~ 0
+RESET
+Text Label 6200 2800 2    50   ~ 0
+RxD
+Text Label 6200 2700 2    50   ~ 0
+TxD
+Wire Wire Line
+	5650 2900 5750 2900
+Wire Wire Line
+	5750 2900 5750 3350
+Wire Wire Line
+	5750 3350 6200 3350
+Wire Wire Line
+	5650 2800 5850 2800
+Wire Wire Line
+	5850 2800 5850 3250
+Wire Wire Line
+	5850 3250 6200 3250
+Wire Wire Line
+	5650 2700 5850 2700
+Wire Wire Line
+	5850 2700 5850 2600
+Wire Wire Line
+	5850 2600 6200 2600
+$EndSCHEMATC
