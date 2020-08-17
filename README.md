@@ -10,3 +10,7 @@ in particular with the [ATTinyCore](https://github.com/SpenceKonde/ATTinyCore).
 A breadboard adapter for the
 [nrf24l01](https://howtomechatronics.com/tutorials/arduino/arduino-wireless-communication-nrf24l01-tutorial/)
 short-range wireless module.
+
+## nrf24l01-rpi
+A Raspberry Pi "hat" containing an SPI-connected nrf24l01+ radio, two status
+LEDs and a shutdown button.
