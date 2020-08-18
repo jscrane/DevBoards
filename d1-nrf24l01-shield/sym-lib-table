@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name d1-bridge-rescue)(type Legacy)(uri ${KIPRJMOD}/d1-bridge-rescue.lib)(options "")(descr ""))
+  (lib (name d1-nrf24l01-shield-rescue)(type Legacy)(uri ${KIPRJMOD}/d1-nrf24l01-shield-rescue.lib)(options "")(descr ""))
+)

@@ -17,3 +17,6 @@ short-range wireless module.
 ## nrf24l01-rpi
 A Raspberry Pi "hat" containing an SPI-connected nrf24l01+ radio, two status
 LEDs and a shutdown button.
+
+## d1-nrf24l01-shield
+A shield for the popular Wemos D1 Mini ESP8266 board containing an SPI-connected nrf24l01+ radio.
