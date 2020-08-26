@@ -1,0 +1,169 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "ncp1402 boost converter"
+Date "2020-07-16"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR02
+U 1 1 5F10612F
+P 5000 4300
+F 0 "#PWR02" H 5000 4050 50  0001 C CNN
+F 1 "GND" H 5005 4127 50  0000 C CNN
+F 2 "" H 5000 4300 50  0001 C CNN
+F 3 "" H 5000 4300 50  0001 C CNN
+	1    5000 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Core_Iron L1
+U 1 1 5F1064A5
+P 4900 3150
+F 0 "L1" V 5125 3150 50  0000 C CNN
+F 1 "47uH" V 5034 3150 50  0000 C CNN
+F 2 "Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP" H 4900 3150 50  0001 C CNN
+F 3 "~" H 4900 3150 50  0001 C CNN
+	1    4900 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D1
+U 1 1 5F106566
+P 5800 3150
+F 0 "D1" H 5800 2934 50  0000 C CNN
+F 1 "BAT85" H 5800 3025 50  0000 C CNN
+F 2 "Diode_THT:D_DO-34_SOD68_P2.54mm_Vertical_KathodeUp" H 5800 3150 50  0001 C CNN
+F 3 "~" H 5800 3150 50  0001 C CNN
+	1    5800 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP1_Small C2
+U 1 1 5F106832
+P 6650 3350
+F 0 "C2" H 6741 3396 50  0000 L CNN
+F 1 "47uF" H 6741 3305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 6650 3350 50  0001 C CNN
+F 3 "~" H 6650 3350 50  0001 C CNN
+	1    6650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C1
+U 1 1 5F106856
+P 4450 3350
+F 0 "C1" H 4541 3396 50  0000 L CNN
+F 1 "10uF" H 4541 3305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 4450 3350 50  0001 C CNN
+F 3 "~" H 4450 3350 50  0001 C CNN
+	1    4450 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3150 6650 3250
+Text Label 6650 3150 0    50   ~ 0
+Vout
+$Comp
+L power:GND #PWR03
+U 1 1 5F1068CF
+P 6650 3450
+F 0 "#PWR03" H 6650 3200 50  0001 C CNN
+F 1 "GND" H 6655 3277 50  0000 C CNN
+F 2 "" H 6650 3450 50  0001 C CNN
+F 3 "" H 6650 3450 50  0001 C CNN
+	1    6650 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5F106A12
+P 4450 3450
+F 0 "#PWR01" H 4450 3200 50  0001 C CNN
+F 1 "GND" H 4455 3277 50  0000 C CNN
+F 2 "" H 4450 3450 50  0001 C CNN
+F 3 "" H 4450 3450 50  0001 C CNN
+	1    4450 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3250 4450 3150
+Text Label 4450 3150 2    50   ~ 0
+Vin
+Wire Wire Line
+	4750 3150 4450 3150
+$Comp
+L Connector:Conn_01x03_Female J1
+U 1 1 5F1073A2
+P 5650 4950
+F 0 "J1" H 5677 4930 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 5677 4885 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5650 4950 50  0001 C CNN
+F 3 "~" H 5650 4950 50  0001 C CNN
+	1    5650 4950
+	1    0    0    -1  
+$EndComp
+Text Label 5450 4850 2    50   ~ 0
+Vin
+Text Label 5450 4950 2    50   ~ 0
+Vout
+Text Label 5450 5050 2    50   ~ 0
+GND
+$Comp
+L NCP1402SN50T1G:NCP1402SN50T1G U1
+U 1 1 5F1078BF
+P 5700 3900
+F 0 "U1" H 5700 4370 50  0000 C CNN
+F 1 "NCP1402" H 5700 4279 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 5700 3900 50  0001 L BNN
+F 3 "1652393" H 5700 3900 50  0001 L BNN
+F 4 "98H0882" H 5700 3900 50  0001 L BNN "Field4"
+F 5 "NCP1402SN50T1G" H 5700 3900 50  0001 L BNN "Field5"
+F 6 "SOT-23-5" H 5700 3900 50  0001 L BNN "Field6"
+F 7 "ON SEMICONDUCTOR" H 5700 3900 50  0001 L BNN "Field7"
+	1    5700 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3150 6400 3150
+Wire Wire Line
+	5050 3150 5500 3150
+Wire Wire Line
+	6400 3800 6400 3150
+Connection ~ 6400 3150
+Wire Wire Line
+	6400 3150 6650 3150
+Text Label 5000 3800 2    50   ~ 0
+Vout
+Wire Wire Line
+	5000 3900 4750 3900
+Wire Wire Line
+	4750 3900 4750 3400
+Wire Wire Line
+	4750 3400 5500 3400
+Wire Wire Line
+	5500 3400 5500 3150
+Connection ~ 5500 3150
+Wire Wire Line
+	5500 3150 5650 3150
+NoConn ~ 5000 4100
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F107D1F
+P 5450 5050
+F 0 "#FLG0101" H 5450 5125 50  0001 C CNN
+F 1 "PWR_FLAG" H 5450 5223 50  0000 C CNN
+F 2 "" H 5450 5050 50  0001 C CNN
+F 3 "~" H 5450 5050 50  0001 C CNN
+	1    5450 5050
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

@@ -20,3 +20,7 @@ LEDs and a shutdown button.
 
 ## d1-nrf24l01-shield
 A shield for the popular Wemos D1 Mini ESP8266 board containing an SPI-connected nrf24l01+ radio.
+
+## ncp1402
+A breadboard adapter for the [ncp1402](https://www.onsemi.com/pub/Collateral/NCP1402-D.PDF)
+step-up switching regulator ("boost converter"). <i>Warning: SMD soldering required!</i>
