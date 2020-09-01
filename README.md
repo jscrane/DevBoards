@@ -8,15 +8,15 @@ Development and breakout boards for use in Arduino projects, with Gerbers.
 ## t84opti
 An ATtiny84 development board with FTDI interface. Works very well
 with [Optiboot](https://github.com/Optiboot/optiboot),
-in particular with the [ATTinyCore](https://github.com/SpenceKonde/ATTinyCore).
+in particular with the [ATTinyCore](https://github.com/SpenceKonde/ATTinyCore). (Top, in picture above.)
 
 ## t85opti
-Same as t84opti, except with ATtiny85, and no LED_BUILTIN.
+Same as t84opti, except with ATtiny85, and no LED_BUILTIN. (Bottom, in picture above.)
 
 ## nrf24l01
 A breadboard adapter for the
 [nrf24l01](https://howtomechatronics.com/tutorials/arduino/arduino-wireless-communication-nrf24l01-tutorial/)
-short-range wireless module.
+short-range wireless module. (Right, in picture above.)
 
 ## nrf24l01-rpi
 A Raspberry Pi "hat" containing an SPI-connected nrf24l01+ radio, two status
@@ -27,4 +27,4 @@ A shield for the popular Wemos D1 Mini ESP8266 board containing an SPI-connected
 
 ## ncp1402
 A breadboard adapter for the [ncp1402](https://www.onsemi.com/pub/Collateral/NCP1402-D.PDF)
-step-up switching regulator ("boost converter"). <i>Warning: SMD soldering required!</i>
+step-up switching regulator ("boost converter"). (Left, in picture above.) <i>Warning: SMD soldering required!</i>
