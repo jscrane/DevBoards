@@ -3,7 +3,7 @@ View this project on [CADLAB.io](https://cadlab.io/project/23203).
 # DevBoards
 Development and breakout boards for use in Arduino projects, with Gerbers.
 
-![Four boards](images.four.jpg)
+<img src="images/four.jpg" width="200" alt="Four boards" align="center">
 
 ## t84opti
 An ATtiny84 development board with FTDI interface. Works very well
