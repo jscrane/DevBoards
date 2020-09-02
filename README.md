@@ -26,5 +26,7 @@ step-up switching regulator ("boost converter"). (Left, in picture.) <i>Warning:
 A Raspberry Pi "hat" containing an SPI-connected nrf24l01+ radio, two status
 LEDs and a shutdown button.
 
+<img src="images/nrf24l01-rpi.jpg" width="200" alt="nrf24l01-rpi" align="center">
+
 ## d1-nrf24l01-shield
 A shield for the popular Wemos D1 Mini ESP8266 board containing an SPI-connected nrf24l01+ radio.
